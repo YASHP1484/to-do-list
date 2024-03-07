@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background: #2564CF;
+    color: #F1FAFF;
+    height: 60px;
+}
+
+header h3{
+    font-family:"SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI","Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+header h3:hover{
+    text-decoration: underline 2px solid #fff;
+    cursor: pointer;
+}
+header input{
+    width: 540px;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-family:  "Segoe","Segoe UI","Arial","sans-serif";
+    border-radius: 0 5px 5px 0;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border:none ;
+    outline: none;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.search i{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: black;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    padding-top:10px ;
+}
+.search span{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: black;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    padding-top:5px ;
+}
+
+.search:hover{
+    width: auto;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 7px;
+    cursor: pointer;
+}
+/* .fa-magnifying-glass:hover .search{
+    visibility: visible;
+    position: absolute;
+    background-color: black;
+    transition: 0.5s;
+    margin-right: 40px;
+} */
+header ul{
+    display: flex;
+    list-style: none;
+    height: 60px;
+    align-items: center;
+    justify-content: start;
+}
+header ul li{
+    height:auto;
+    width: 100%;
+    padding: 20px 0;
+}
+header ul li a{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+header ul li:hover {
+    background: rgba(0,0,0,0.2);
+}
+main{
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+.openbar{
+    display: none;
+    cursor: pointer;
+}
+#side{
+    width:20%;
+}
+.sidebar{
+    height: 100%; 
+    border:none;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    outline: none;
+    box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%); 
+    overflow-y: hidden;  
+  
+}
+
+nav ul{
+    height:calc(100vh) ;
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+}
+nav ul a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding:20px 20px ;
+    cursor: pointer;
+}
+    
+ nav ul a:hover{
+    background: rgba(0,0,0,0.1);
+}
+#active{
+    background: rgba(0,0,0,0.2);
+}
+
+ nav span{
+    margin-left: 20px;
+    font-family: sans-serif;
+
+}
+.sidebar .fa-bars{
+    margin: 20px;
+    font-size: large;
+    cursor: pointer;
+}
+/* -----------------content---------------------- */
+.yash{
+    height: auto;
+    width: 100%;
+    background: #FAF9F8;
+
+}
+
+.content{
+    padding: 30px;
+}
+.rows{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.date-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.date-time p span{
+    justify-content: first baseline;
+    margin-left: 10px;
+    font-family:sans-serif;
+    /* font: 1000; */
+}
+.date{
+    font-size: small;
+    margin-top: 10px;
+}
+.tools{
+    display: flex;
+    align-items: center; 
+}
+.tools a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px; 
+    height: 100%;
+    list-style: none;
+    text-decoration: none;
+    width: auto;
+    font-size: 100;
+    font-family: sans-serif;
+}
+.tools a i{
+    padding: 10px;cursor: pointer;
+}
+.tools span{
+    padding: 10px;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 10px;
+    width: 100%;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%); 
+}
+
+/* .task-field{
+    padding: 20px;
+    border: none;   
+    outline: none; 
+    cursor: pointer;
+}
+.task-field::before{
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-color: black;
+} */
+.task-field{
+    padding: 20px 10px;
+    padding-left: 40px;
+    color: #555;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;   
+    outline: none; 
+    cursor: pointer;
+}
+.task-field::before{
+    content: '';
+    position: absolute; 
+    margin-top: -13px;
+    margin-left: -32px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+.iconUl{
+    display: flex;
+    background: hsl(30, 17%, 98%);
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.iconUl li{
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+.iconUl li a{
+    color: rgba(0, 0, 0, 0.7);
+}
+.iconUl li a i{
+    padding: 5px 10px;
+}
+.add-btn{
+    padding: 5px 10px;
+    color: #2564CF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: white;
+    cursor: pointer;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.main-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%);
+
+}
+
+.task{
+    padding: 20px 10px;
+    padding-left: 40px;
+    color: #555;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    border: none;   
+    outline: none; 
+    cursor: pointer;
+}
+.task::before{
+    content: '';
+    position: absolute; 
+    margin-top: -3px;
+    margin-left: -32px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+.span{
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+.lable-checked{
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(images/checked.png);
+}
+.icons{
+    display: flex;
+    background-color: #FBFAF9;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.icons li{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+}
+.icons li a{
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer ;
+    padding: 10px;
+}
+.icons li a i{
+    padding: 5px 10px;
+}
+.add{
+    padding: 5px 10px;
+    color: #2564CF;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background: white;
+    cursor: pointer;
+}
+#right{
+    display: none;
+    transition: 2s;
+    height: auto; 
+    box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%);
+}
+
+/* .transform{
+    transition: all 2s ease;
+  }
+.transform-active{
+    width: 40%;
+    display: block;
+} */
+#group{
+    cursor: pointer;
+}
+.rightbar{
+    border:none;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    outline: none;
+    padding: 20px;
+}
+#closeSuges{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+}
+.headings{
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
