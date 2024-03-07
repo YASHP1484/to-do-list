@@ -117,8 +117,8 @@
             span.appendChild(text);
             serchDiv.appendChild(span);
     }
-    search.addEventListener("click",searchClick);
-
+    search.addEventListener("click",searchClick,{once:true});
+    
     function closemenu(){
             sideBar.style.width="0";
             sideBar.style.transition="0.5s";
