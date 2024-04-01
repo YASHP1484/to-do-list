@@ -25,7 +25,6 @@ header h3:hover{
     cursor: pointer;
 }
 header input{
-    width: 540px;
     height: 35px;
     border: none;
     outline: none;
@@ -47,6 +46,7 @@ header input{
     align-items: center;
     text-align: center;
 }
+
 
 
 .search i{
@@ -330,6 +330,14 @@ nav ul a {
     background-position: center;
 }
 .span{
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+.closeBtn{
     font-size: 22px;
     justify-content: center;
     align-items: center;
