@@ -227,20 +227,6 @@ nav ul a {
     box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%); 
 }
 
-/* .task-field{
-    padding: 20px;
-    border: none;   
-    outline: none; 
-    cursor: pointer;
-}
-.task-field::before{
-    content: "";
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(images/unchecked.png);
-    background-color: black;
-} */
 .task-field{
     padding: 20px 10px;
     padding-left: 40px;
@@ -304,14 +290,16 @@ nav ul a {
     box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%);
 
 }
-
+.getResponse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .task{
     padding: 20px 10px;
     padding-left: 40px;
     color: #555;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     text-align: center;
     border: none;   
     outline: none; 
@@ -336,6 +324,7 @@ nav ul a {
     color: black;
     text-align: center;
     cursor: pointer;
+    padding: 10px;
 }
 .closeBtn{
     font-size: 22px;
@@ -345,12 +334,14 @@ nav ul a {
     text-align: center;
     cursor: pointer;
 }
-.lable-checked{
-    text-decoration: line-through;
-}
+
 .checked::before{
     background-image: url(images/checked.png);
 }
+.label-checked-text{
+    text-decoration: line-through;
+}
+
 .icons{
     display: flex;
     background-color: #FBFAF9;
@@ -414,6 +405,41 @@ nav ul a {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+.mainList{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%);
+
+}
+.task-completed{
+    padding: 20px 10px;
+    padding-left: 40px;
+    color: #555;
+    text-align: center;
+    border: none;   
+    outline: none; 
+    cursor: pointer;
+}
+.task-completed::before{
+    content: '';
+    position: absolute; 
+    margin-top: -13px;
+    margin-left: -32px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/checked.png);
+    background-size: cover;
+    background-position: center;
+}
+.getTextResponse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: line-through;
 }
 
 
