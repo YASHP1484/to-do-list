@@ -132,25 +132,35 @@ function createCopy() {
     }
   }
   let task = document.getElementById("completedTaskCont");
+  let heading = document.querySelector("#headingOneTime");
 
   function completedTask() {
-    // let heading = document.createElement("h3");
-    // heading.textContent = "completed";
-    // task.appendChild(heading);
-    let completeTaskDiv = document.createElement("div");
-    completeTaskDiv.classList.add("mainList");
-    task.appendChild(completeTaskDiv);
+    heading.style.display = "none";
 
-    let resp = document.createElement("div");
-    resp.classList.add("getTextResponse");
-    completeTaskDiv.appendChild(resp);
+    if (heading.style.display) {
+      // let heading = document.createElement("h3");
+      // heading.textContent = "completed";
+      // task.appendChild(heading);
+      heading.style.display = "block";
+    }
 
-    let createLabelCompleteTask = document.createElement("label");
-    createLabelCompleteTask.classList.add("task-completed", "checked");
-    createLabelCompleteTask.textContent = createLabel.innerHTML;
-    resp.appendChild(createLabelCompleteTask);
-    createDiv.remove();
+    task.appendChild(createDiv);
+    
+    // let completeTaskDiv = document.createElement("div");
+    // completeTaskDiv.classList.add("mainList");
+    // task.appendChild(completeTaskDiv);
+
+    // let resp = document.createElement("div");
+    // resp.classList.add("getTextResponse");
+    // completeTaskDiv.appendChild(resp);
+
+    // let createLabelCompleteTask = document.createElement("label");
+    // createLabelCompleteTask.classList.add("task-completed", "checked");
+    // createLabelCompleteTask.textContent = createLabel.innerHTML;
+    // resp.appendChild(createLabelCompleteTask);
+    // createDiv.remove();
   }
+  function moveToNotCompleted() {}
 
   function handle(e) {
     if ((e.target = span)) {

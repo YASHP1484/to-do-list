@@ -441,6 +441,9 @@ nav ul a {
     align-items: center;
     text-decoration: line-through;
 }
+#completedTaskCont h3{
+    display: none;
+}
 
 
 
